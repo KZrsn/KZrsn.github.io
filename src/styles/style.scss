@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  button {
+    font-size: 18px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #57befa;
+    &:hover {
+      color: rgb(255, 255, 255);
+      background-color: #3496cf;
+    }
+  }
+}
+
+@import './nav';
+@import './search';
+@import './footer';
+@import './picture';
+@import './about';

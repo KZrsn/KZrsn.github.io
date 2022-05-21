@@ -1,0 +1,241 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.loadMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.loadMore button {
+  font-size: 18px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #57befa;
+}
+
+.loadMore button:hover {
+  color: white;
+  background-color: #3496cf;
+}
+
+nav {
+  background-color: #57befa;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5rem;
+}
+
+nav ul a {
+  padding: 1rem;
+}
+
+nav ul a:hover {
+  background-color: #75ccff;
+}
+
+nav ul a li {
+  font-size: 18px;
+  color: white;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem;
+}
+
+.search input,
+.search button {
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3496cf;
+}
+
+.search button {
+  background-color: #3496cf;
+  color: #ffffff;
+}
+
+.search button:hover {
+  background-color: #57befa;
+  border: 1px solid #57befa;
+  cursor: pointer;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c7ebff;
+  height: 50px;
+}
+
+.homePage-pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picture {
+  padding: 1rem;
+  width: 400px;
+  position: relative;
+  z-index: 0;
+}
+
+.picture::before {
+  content: "";
+  margin: 0 1rem;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.picture:hover::before {
+  opacity: 1;
+}
+
+.picture .imageBig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.picture .imageBig:hover p.title {
+  visibility: visible;
+}
+
+.picture .imageBig p.title {
+  color: white;
+  position: absolute;
+  margin: 10px 20px;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.picture .imageBig img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.picture .imageBig img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.picture p.download a:hover {
+  color: #e63030;
+}
+
+div.About {
+  height: 600px;
+}
+
+div.About div.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.About div.text h1 {
+  margin: 50px;
+}
+
+div.About div.text p {
+  font-size: 18px;
+  margin: 15px;
+}
+
+div.About div.text button {
+  width: 100px;
+  height: 50px;
+  margin: 50px 0 0 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #3496cf;
+}
+
+div.About div.text button:hover {
+  background-color: #57befa;
+  cursor: pointer;
+}
+
+div.About div.text button:hover a {
+  color: #000000;
+}
+
+div.About div.text button a {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

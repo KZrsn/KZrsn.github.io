@@ -1,0 +1,59 @@
+.homePage-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  padding: 1rem;
+  width: 400px;
+  position: relative;
+  z-index: 0;
+  &::before {
+  content: "";
+  margin: 0 1rem;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+  opacity: 0;
+  z-index: 1;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+  .imageBig {
+    display: flex;
+    overflow: hidden; // 自動隱藏超出的文字或圖片。
+    height: 40vh;
+    &:hover p.title {
+      visibility: visible; // hover顯示隱藏文字
+    }
+    p.title {
+      color: rgb(255, 255, 255);
+      position: absolute;
+      margin: 10px 20px;
+      z-index: 5;
+      visibility: hidden;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.25); // hover照片放大
+      }
+    }
+  }
+  p.download {
+    a {
+      &:hover {
+        color: rgb(230, 48, 48);
+      }
+    }
+  }
+}

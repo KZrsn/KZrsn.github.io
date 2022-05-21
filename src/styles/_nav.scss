@@ -1,0 +1,21 @@
+nav {
+  background-color: #57befa;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+
+    a {
+      padding: 1rem;
+      &:hover {
+        background-color: #75ccff;
+      }
+
+      li {
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
