@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kzrsn.github.io/npm%20run%20deploy/static/css/main.2814d9d7.css",
-    "main.js": "/kzrsn.github.io/npm%20run%20deploy/static/js/main.936f152a.js",
-    "index.html": "/kzrsn.github.io/npm%20run%20deploy/index.html",
-    "main.2814d9d7.css.map": "/kzrsn.github.io/npm%20run%20deploy/static/css/main.2814d9d7.css.map",
-    "main.936f152a.js.map": "/kzrsn.github.io/npm%20run%20deploy/static/js/main.936f152a.js.map"
+    "main.css": "/static/css/main.2814d9d7.css",
+    "main.js": "/static/js/main.936f152a.js",
+    "index.html": "/index.html",
+    "main.2814d9d7.css.map": "/static/css/main.2814d9d7.css.map",
+    "main.936f152a.js.map": "/static/js/main.936f152a.js.map"
   },
   "entrypoints": [
     "static/css/main.2814d9d7.css",
