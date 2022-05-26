@@ -63,13 +63,13 @@ const HomePage = () => {
 
 
   return (
-  <div style={{minHeight : "100vh" }}>
+  <div className='main'>
       <Search search={() => {
         setCurrentSearch(input); // JS Closure
       }} setInput={setInput} />
       <div className='homePage-pictures'>
-        {data && data.map((d) => {
-          return <Picture data={d} />;
+        {data && data.map((d,key) => {
+          return <Picture data={d} key={key} />;
         })}
       </div>
 

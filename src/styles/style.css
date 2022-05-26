@@ -89,6 +89,10 @@ nav ul a li {
   border: 1px solid #3496cf;
 }
 
+.search input {
+  width: 80%;
+}
+
 .search button {
   background-color: #3496cf;
   color: #ffffff;
@@ -98,6 +102,18 @@ nav ul a li {
   background-color: #57befa;
   border: 1px solid #57befa;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    margin: 4rem 1rem;
+  }
+  .search input {
+    width: 80%;
+  }
+  .search button {
+    width: 20%;
+  }
 }
 
 .footer {
@@ -111,7 +127,7 @@ nav ul a li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #c7ebff;
-  height: 50px;
+  padding: 10px;
 }
 
 .homePage-pictures {
@@ -191,11 +207,7 @@ nav ul a li {
   color: #e63030;
 }
 
-div.About {
-  height: 600px;
-}
-
-div.About div.text {
+div.main div.text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,36 +218,57 @@ div.About div.text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 100px;
 }
 
-div.About div.text h1 {
+div.main div.text h1 {
   margin: 50px;
 }
 
-div.About div.text p {
+div.main div.text p {
   font-size: 18px;
   margin: 15px;
 }
 
-div.About div.text button {
+div.main div.text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100px;
   height: 50px;
   margin: 50px 0 0 0;
   border: none;
   border-radius: 5px;
   background-color: #3496cf;
+  color: #ffffff;
 }
 
-div.About div.text button:hover {
+div.main div.text a:hover {
   background-color: #57befa;
   cursor: pointer;
-}
-
-div.About div.text button:hover a {
   color: #000000;
 }
 
-div.About div.text button a {
-  color: #ffffff;
+div.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+div.App div.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,9 @@
     font-size: 18px;
     padding: 0.5rem 1rem;
     border: 1px solid #3496cf;
-
+  }
+  input {
+    width: 80%;
   }
   button {
     background-color: #3496cf;
@@ -18,6 +20,19 @@
       background-color: #57befa;
       border: 1px solid #57befa;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .search {
+    margin: 4rem 1rem;
+
+    input {
+      width: 80%;
+    }
+    button {
+      width: 20%;
     }
   }
 }
