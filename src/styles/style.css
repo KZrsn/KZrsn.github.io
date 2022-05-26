@@ -271,4 +271,43 @@ div.App div.main {
       -ms-flex: 1;
           flex: 1;
 }
+
+div.ErrorPage div.error {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+div.ErrorPage div.error img {
+  width: 100vw;
+  height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+div.ErrorPage div.error button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: 30px;
+  background-color: #3496cf;
+  color: #ffffff;
+}
+
+div.ErrorPage div.error button:hover {
+  background-color: #57befa;
+  cursor: pointer;
+  color: #000000;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+div.ErrorPage {
+  div.error {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+    img {
+      width: 100vw;
+      height: 60vh;
+      object-fit: contain;
+    }
+    button {
+      border: none;
+      padding: 1rem 2rem;
+      margin: 30px;
+      background-color: #3496cf;
+      color: #ffffff;
+      &:hover {
+        background-color: #57befa;
+        cursor: pointer;
+        color: #000000;
+      }
+    }
+  }
+}
